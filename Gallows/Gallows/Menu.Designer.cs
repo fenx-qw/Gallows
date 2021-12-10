@@ -44,6 +44,7 @@ namespace Gallows
             this.startGame.TabIndex = 0;
             this.startGame.Text = "Играть";
             this.startGame.UseVisualStyleBackColor = true;
+            this.startGame.Click += new System.EventHandler(this.startGame_Click);
             // 
             // leaderboard
             // 
@@ -53,6 +54,7 @@ namespace Gallows
             this.leaderboard.TabIndex = 0;
             this.leaderboard.Text = "Список лидеров";
             this.leaderboard.UseVisualStyleBackColor = true;
+            this.leaderboard.Click += new System.EventHandler(this.leaderboard_Click);
             // 
             // exit
             // 
@@ -72,6 +74,7 @@ namespace Gallows
             this.reference.TabIndex = 0;
             this.reference.Text = "Справка";
             this.reference.UseVisualStyleBackColor = true;
+            this.reference.Click += new System.EventHandler(this.reference_Click);
             // 
             // addWord
             // 
@@ -81,6 +84,7 @@ namespace Gallows
             this.addWord.TabIndex = 0;
             this.addWord.Text = "Добавить слова";
             this.addWord.UseVisualStyleBackColor = true;
+            this.addWord.Click += new System.EventHandler(this.addWord_Click);
             // 
             // Menu
             // 

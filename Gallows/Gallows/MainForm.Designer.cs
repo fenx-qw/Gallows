@@ -63,6 +63,7 @@ namespace Gallows
             this.char31 = new System.Windows.Forms.Button();
             this.char32 = new System.Windows.Forms.Button();
             this.char33 = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -371,11 +372,21 @@ namespace Gallows
             this.char33.Text = "Я";
             this.char33.UseVisualStyleBackColor = true;
             // 
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(690, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(104, 41);
+            this.close.TabIndex = 2;
+            this.close.Text = "Закрыть";
+            this.close.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 543);
+            this.ClientSize = new System.Drawing.Size(832, 447);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.char33);
             this.Controls.Add(this.char32);
             this.Controls.Add(this.char24);
@@ -453,6 +464,7 @@ namespace Gallows
         private System.Windows.Forms.Button char31;
         private System.Windows.Forms.Button char32;
         private System.Windows.Forms.Button char33;
+        private System.Windows.Forms.Button close;
     }
 }
 

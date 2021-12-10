@@ -9,13 +9,11 @@ using System.Windows.Forms;
 
 namespace Gallows
 {
-    public partial class MainForm : Form
+    public partial class NewLeader : Form
     {
-        int level;
-        public MainForm(int levelGame)
+        public NewLeader()
         {
             InitializeComponent();
-            level = levelGame;
         }
     }
 }

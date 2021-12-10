@@ -31,7 +31,7 @@ namespace Gallows
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,21 +45,21 @@ namespace Gallows
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // button1
+            // close
             // 
-            this.button1.Location = new System.Drawing.Point(815, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 41);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Закрыть";
-            this.button1.UseVisualStyleBackColor = true;
+            this.close.Location = new System.Drawing.Point(815, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(104, 41);
+            this.close.TabIndex = 1;
+            this.close.Text = "Закрыть";
+            this.close.UseVisualStyleBackColor = true;
             // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 272);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.close);
             this.Controls.Add(this.label1);
             this.Name = "Info";
             this.Text = "Справка";
@@ -71,6 +71,6 @@ namespace Gallows
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button close;
     }
 }

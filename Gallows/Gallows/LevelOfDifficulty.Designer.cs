@@ -29,46 +29,60 @@ namespace Gallows
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.easyLevel = new System.Windows.Forms.Button();
+            this.normalLevel = new System.Windows.Forms.Button();
+            this.hardLevel = new System.Windows.Forms.Button();
+            this.close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // easyLevel
             // 
-            this.button1.Location = new System.Drawing.Point(93, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 56);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Легкий";
-            this.button1.UseVisualStyleBackColor = true;
+            this.easyLevel.Location = new System.Drawing.Point(93, 64);
+            this.easyLevel.Name = "easyLevel";
+            this.easyLevel.Size = new System.Drawing.Size(188, 56);
+            this.easyLevel.TabIndex = 0;
+            this.easyLevel.Text = "Легкий";
+            this.easyLevel.UseVisualStyleBackColor = true;
+            this.easyLevel.Click += new System.EventHandler(this.easyLevel_Click);
             // 
-            // button2
+            // normalLevel
             // 
-            this.button2.Location = new System.Drawing.Point(93, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(188, 56);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Средний";
-            this.button2.UseVisualStyleBackColor = true;
+            this.normalLevel.Location = new System.Drawing.Point(93, 154);
+            this.normalLevel.Name = "normalLevel";
+            this.normalLevel.Size = new System.Drawing.Size(188, 56);
+            this.normalLevel.TabIndex = 0;
+            this.normalLevel.Text = "Средний";
+            this.normalLevel.UseVisualStyleBackColor = true;
+            this.normalLevel.Click += new System.EventHandler(this.normalLevel_Click);
             // 
-            // button3
+            // hardLevel
             // 
-            this.button3.Location = new System.Drawing.Point(93, 248);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 56);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Сложный";
-            this.button3.UseVisualStyleBackColor = true;
+            this.hardLevel.Location = new System.Drawing.Point(93, 248);
+            this.hardLevel.Name = "hardLevel";
+            this.hardLevel.Size = new System.Drawing.Size(188, 56);
+            this.hardLevel.TabIndex = 0;
+            this.hardLevel.Text = "Сложный";
+            this.hardLevel.UseVisualStyleBackColor = true;
+            this.hardLevel.Click += new System.EventHandler(this.hardLevel_Click);
+            // 
+            // close
+            // 
+            this.close.Location = new System.Drawing.Point(294, 12);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(104, 41);
+            this.close.TabIndex = 2;
+            this.close.Text = "Закрыть";
+            this.close.UseVisualStyleBackColor = true;
             // 
             // LevelOfDifficulty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 396);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.close);
+            this.Controls.Add(this.hardLevel);
+            this.Controls.Add(this.normalLevel);
+            this.Controls.Add(this.easyLevel);
             this.Name = "LevelOfDifficulty";
             this.Text = "Уровень ложности";
             this.ResumeLayout(false);
@@ -77,8 +91,9 @@ namespace Gallows
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button easyLevel;
+        private System.Windows.Forms.Button normalLevel;
+        private System.Windows.Forms.Button hardLevel;
+        private System.Windows.Forms.Button close;
     }
 }

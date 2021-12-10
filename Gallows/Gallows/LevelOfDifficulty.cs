@@ -15,5 +15,23 @@ namespace Gallows
         {
             InitializeComponent();
         }
+
+        private void easyLevel_Click(object sender, EventArgs e)
+        {
+            MainForm form = new MainForm(0);
+            form.ShowDialog();
+        }
+
+        private void normalLevel_Click(object sender, EventArgs e)
+        {
+            MainForm form = new MainForm(1);
+            form.ShowDialog();
+        }
+
+        private void hardLevel_Click(object sender, EventArgs e)
+        {
+            MainForm form = new MainForm(2);
+            form.ShowDialog();
+        }
     }
 }
