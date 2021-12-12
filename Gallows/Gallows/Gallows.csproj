@@ -128,15 +128,5 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="img\Gallows-step 0.jpg" />
-    <Content Include="img\Gallows-step 1.jpg" />
-    <Content Include="img\Gallows-step 2.jpg" />
-    <Content Include="img\Gallows-step 3.jpg" />
-    <Content Include="img\Gallows-step 4.jpg" />
-    <Content Include="img\Gallows-step 5.jpg" />
-    <Content Include="img\Gallows-step 6.jpg" />
-    <Content Include="img\Gallows-step 7.jpg" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

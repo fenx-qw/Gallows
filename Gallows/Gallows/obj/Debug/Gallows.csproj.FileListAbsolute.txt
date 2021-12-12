@@ -1,0 +1,15 @@
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.csproj.AssemblyReference.cache
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.AddWord.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.Info.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.Leaderboard.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.LevelOfDifficulty.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.MainForm.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.Menu.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.NewLeader.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.Properties.Resources.resources
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.csproj.GenerateResource.cache
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.csproj.CoreCompileInputs.cache
+C:\Users\К\source\repos\Gallows\Gallows\bin\Debug\Gallows.exe
+C:\Users\К\source\repos\Gallows\Gallows\bin\Debug\Gallows.pdb
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.exe
+C:\Users\К\source\repos\Gallows\Gallows\obj\Debug\Gallows.pdb

@@ -29,7 +29,8 @@ namespace Gallows
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.gallowProgress = new System.Windows.Forms.PictureBox();
             this.char1 = new System.Windows.Forms.Button();
             this.char2 = new System.Windows.Forms.Button();
             this.char3 = new System.Windows.Forms.Button();
@@ -64,16 +65,19 @@ namespace Gallows
             this.char32 = new System.Windows.Forms.Button();
             this.char33 = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.wordLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.gallowProgress)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // gallowProgress
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(64, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(327, 367);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.gallowProgress.Image = ((System.Drawing.Image)(resources.GetObject("gallowProgress.Image")));
+            this.gallowProgress.Location = new System.Drawing.Point(64, 42);
+            this.gallowProgress.Name = "gallowProgress";
+            this.gallowProgress.Size = new System.Drawing.Size(327, 367);
+            this.gallowProgress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gallowProgress.TabIndex = 0;
+            this.gallowProgress.TabStop = false;
             // 
             // char1
             // 
@@ -83,6 +87,7 @@ namespace Gallows
             this.char1.TabIndex = 1;
             this.char1.Text = "А";
             this.char1.UseVisualStyleBackColor = true;
+            this.char1.Click += new System.EventHandler(this.char_Click);
             // 
             // char2
             // 
@@ -92,6 +97,7 @@ namespace Gallows
             this.char2.TabIndex = 1;
             this.char2.Text = "Б";
             this.char2.UseVisualStyleBackColor = true;
+            this.char2.Click += new System.EventHandler(this.char_Click);
             // 
             // char3
             // 
@@ -101,6 +107,7 @@ namespace Gallows
             this.char3.TabIndex = 1;
             this.char3.Text = "В";
             this.char3.UseVisualStyleBackColor = true;
+            this.char3.Click += new System.EventHandler(this.char_Click);
             // 
             // char4
             // 
@@ -110,6 +117,7 @@ namespace Gallows
             this.char4.TabIndex = 1;
             this.char4.Text = "Г";
             this.char4.UseVisualStyleBackColor = true;
+            this.char4.Click += new System.EventHandler(this.char_Click);
             // 
             // char5
             // 
@@ -119,6 +127,7 @@ namespace Gallows
             this.char5.TabIndex = 1;
             this.char5.Text = "Д";
             this.char5.UseVisualStyleBackColor = true;
+            this.char5.Click += new System.EventHandler(this.char_Click);
             // 
             // char6
             // 
@@ -128,6 +137,7 @@ namespace Gallows
             this.char6.TabIndex = 1;
             this.char6.Text = "Е";
             this.char6.UseVisualStyleBackColor = true;
+            this.char6.Click += new System.EventHandler(this.char_Click);
             // 
             // char7
             // 
@@ -137,6 +147,7 @@ namespace Gallows
             this.char7.TabIndex = 1;
             this.char7.Text = "Ё";
             this.char7.UseVisualStyleBackColor = true;
+            this.char7.Click += new System.EventHandler(this.char_Click);
             // 
             // char8
             // 
@@ -146,6 +157,7 @@ namespace Gallows
             this.char8.TabIndex = 1;
             this.char8.Text = "Ж";
             this.char8.UseVisualStyleBackColor = true;
+            this.char8.Click += new System.EventHandler(this.char_Click);
             // 
             // char9
             // 
@@ -155,6 +167,7 @@ namespace Gallows
             this.char9.TabIndex = 1;
             this.char9.Text = "З";
             this.char9.UseVisualStyleBackColor = true;
+            this.char9.Click += new System.EventHandler(this.char_Click);
             // 
             // char10
             // 
@@ -164,6 +177,7 @@ namespace Gallows
             this.char10.TabIndex = 1;
             this.char10.Text = "И";
             this.char10.UseVisualStyleBackColor = true;
+            this.char10.Click += new System.EventHandler(this.char_Click);
             // 
             // char11
             // 
@@ -173,6 +187,7 @@ namespace Gallows
             this.char11.TabIndex = 1;
             this.char11.Text = "Й";
             this.char11.UseVisualStyleBackColor = true;
+            this.char11.Click += new System.EventHandler(this.char_Click);
             // 
             // char12
             // 
@@ -182,6 +197,7 @@ namespace Gallows
             this.char12.TabIndex = 1;
             this.char12.Text = "К";
             this.char12.UseVisualStyleBackColor = true;
+            this.char12.Click += new System.EventHandler(this.char_Click);
             // 
             // char13
             // 
@@ -191,6 +207,7 @@ namespace Gallows
             this.char13.TabIndex = 1;
             this.char13.Text = "Л";
             this.char13.UseVisualStyleBackColor = true;
+            this.char13.Click += new System.EventHandler(this.char_Click);
             // 
             // char14
             // 
@@ -200,6 +217,7 @@ namespace Gallows
             this.char14.TabIndex = 1;
             this.char14.Text = "М";
             this.char14.UseVisualStyleBackColor = true;
+            this.char14.Click += new System.EventHandler(this.char_Click);
             // 
             // char15
             // 
@@ -209,6 +227,7 @@ namespace Gallows
             this.char15.TabIndex = 1;
             this.char15.Text = "Н";
             this.char15.UseVisualStyleBackColor = true;
+            this.char15.Click += new System.EventHandler(this.char_Click);
             // 
             // char16
             // 
@@ -218,6 +237,7 @@ namespace Gallows
             this.char16.TabIndex = 1;
             this.char16.Text = "О";
             this.char16.UseVisualStyleBackColor = true;
+            this.char16.Click += new System.EventHandler(this.char_Click);
             // 
             // char17
             // 
@@ -227,6 +247,7 @@ namespace Gallows
             this.char17.TabIndex = 1;
             this.char17.Text = "П";
             this.char17.UseVisualStyleBackColor = true;
+            this.char17.Click += new System.EventHandler(this.char_Click);
             // 
             // char18
             // 
@@ -236,6 +257,7 @@ namespace Gallows
             this.char18.TabIndex = 1;
             this.char18.Text = "Р";
             this.char18.UseVisualStyleBackColor = true;
+            this.char18.Click += new System.EventHandler(this.char_Click);
             // 
             // char19
             // 
@@ -245,6 +267,7 @@ namespace Gallows
             this.char19.TabIndex = 1;
             this.char19.Text = "С";
             this.char19.UseVisualStyleBackColor = true;
+            this.char19.Click += new System.EventHandler(this.char_Click);
             // 
             // char20
             // 
@@ -254,6 +277,7 @@ namespace Gallows
             this.char20.TabIndex = 1;
             this.char20.Text = "Т";
             this.char20.UseVisualStyleBackColor = true;
+            this.char20.Click += new System.EventHandler(this.char_Click);
             // 
             // char21
             // 
@@ -263,6 +287,7 @@ namespace Gallows
             this.char21.TabIndex = 1;
             this.char21.Text = "У";
             this.char21.UseVisualStyleBackColor = true;
+            this.char21.Click += new System.EventHandler(this.char_Click);
             // 
             // char22
             // 
@@ -272,6 +297,7 @@ namespace Gallows
             this.char22.TabIndex = 1;
             this.char22.Text = "Ф";
             this.char22.UseVisualStyleBackColor = true;
+            this.char22.Click += new System.EventHandler(this.char_Click);
             // 
             // char23
             // 
@@ -281,6 +307,7 @@ namespace Gallows
             this.char23.TabIndex = 1;
             this.char23.Text = "Х";
             this.char23.UseVisualStyleBackColor = true;
+            this.char23.Click += new System.EventHandler(this.char_Click);
             // 
             // char24
             // 
@@ -290,6 +317,7 @@ namespace Gallows
             this.char24.TabIndex = 1;
             this.char24.Text = "Ц";
             this.char24.UseVisualStyleBackColor = true;
+            this.char24.Click += new System.EventHandler(this.char_Click);
             // 
             // char25
             // 
@@ -299,6 +327,7 @@ namespace Gallows
             this.char25.TabIndex = 1;
             this.char25.Text = "Ч";
             this.char25.UseVisualStyleBackColor = true;
+            this.char25.Click += new System.EventHandler(this.char_Click);
             // 
             // char26
             // 
@@ -308,6 +337,7 @@ namespace Gallows
             this.char26.TabIndex = 1;
             this.char26.Text = "Ш";
             this.char26.UseVisualStyleBackColor = true;
+            this.char26.Click += new System.EventHandler(this.char_Click);
             // 
             // char27
             // 
@@ -317,6 +347,7 @@ namespace Gallows
             this.char27.TabIndex = 1;
             this.char27.Text = "Щ";
             this.char27.UseVisualStyleBackColor = true;
+            this.char27.Click += new System.EventHandler(this.char_Click);
             // 
             // char28
             // 
@@ -326,6 +357,7 @@ namespace Gallows
             this.char28.TabIndex = 1;
             this.char28.Text = "Ъ";
             this.char28.UseVisualStyleBackColor = true;
+            this.char28.Click += new System.EventHandler(this.char_Click);
             // 
             // char29
             // 
@@ -335,6 +367,7 @@ namespace Gallows
             this.char29.TabIndex = 1;
             this.char29.Text = "Ы";
             this.char29.UseVisualStyleBackColor = true;
+            this.char29.Click += new System.EventHandler(this.char_Click);
             // 
             // char30
             // 
@@ -344,6 +377,7 @@ namespace Gallows
             this.char30.TabIndex = 1;
             this.char30.Text = "Ь";
             this.char30.UseVisualStyleBackColor = true;
+            this.char30.Click += new System.EventHandler(this.char_Click);
             // 
             // char31
             // 
@@ -353,6 +387,7 @@ namespace Gallows
             this.char31.TabIndex = 1;
             this.char31.Text = "Э";
             this.char31.UseVisualStyleBackColor = true;
+            this.char31.Click += new System.EventHandler(this.char_Click);
             // 
             // char32
             // 
@@ -362,6 +397,7 @@ namespace Gallows
             this.char32.TabIndex = 1;
             this.char32.Text = "Ю";
             this.char32.UseVisualStyleBackColor = true;
+            this.char32.Click += new System.EventHandler(this.char_Click);
             // 
             // char33
             // 
@@ -371,6 +407,7 @@ namespace Gallows
             this.char33.TabIndex = 1;
             this.char33.Text = "Я";
             this.char33.UseVisualStyleBackColor = true;
+            this.char33.Click += new System.EventHandler(this.char_Click);
             // 
             // close
             // 
@@ -381,11 +418,22 @@ namespace Gallows
             this.close.Text = "Закрыть";
             this.close.UseVisualStyleBackColor = true;
             // 
+            // wordLabel
+            // 
+            this.wordLabel.AutoSize = true;
+            this.wordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.wordLabel.Location = new System.Drawing.Point(144, 430);
+            this.wordLabel.Name = "wordLabel";
+            this.wordLabel.Size = new System.Drawing.Size(154, 42);
+            this.wordLabel.TabIndex = 3;
+            this.wordLabel.Text = "СЛОВО";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 447);
+            this.ClientSize = new System.Drawing.Size(832, 495);
+            this.Controls.Add(this.wordLabel);
             this.Controls.Add(this.close);
             this.Controls.Add(this.char33);
             this.Controls.Add(this.char32);
@@ -420,17 +468,19 @@ namespace Gallows
             this.Controls.Add(this.char9);
             this.Controls.Add(this.char2);
             this.Controls.Add(this.char1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.gallowProgress);
             this.Name = "MainForm";
             this.Text = "Игра \"Виселица\"";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gallowProgress)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox gallowProgress;
         private System.Windows.Forms.Button char1;
         private System.Windows.Forms.Button char2;
         private System.Windows.Forms.Button char3;
@@ -465,6 +515,7 @@ namespace Gallows
         private System.Windows.Forms.Button char32;
         private System.Windows.Forms.Button char33;
         private System.Windows.Forms.Button close;
+        private System.Windows.Forms.Label wordLabel;
     }
 }
 
