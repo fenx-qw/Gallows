@@ -66,13 +66,15 @@ namespace Gallows
             this.char33 = new System.Windows.Forms.Button();
             this.close = new System.Windows.Forms.Button();
             this.wordLabel = new System.Windows.Forms.Label();
+            this.scoreInfo = new System.Windows.Forms.Label();
+            this.restart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gallowProgress)).BeginInit();
             this.SuspendLayout();
             // 
             // gallowProgress
             // 
             this.gallowProgress.Image = ((System.Drawing.Image)(resources.GetObject("gallowProgress.Image")));
-            this.gallowProgress.Location = new System.Drawing.Point(64, 42);
+            this.gallowProgress.Location = new System.Drawing.Point(63, 63);
             this.gallowProgress.Name = "gallowProgress";
             this.gallowProgress.Size = new System.Drawing.Size(327, 367);
             this.gallowProgress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -417,22 +419,45 @@ namespace Gallows
             this.close.TabIndex = 2;
             this.close.Text = "Закрыть";
             this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // wordLabel
             // 
-            this.wordLabel.AutoSize = true;
             this.wordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.wordLabel.Location = new System.Drawing.Point(144, 430);
+            this.wordLabel.Location = new System.Drawing.Point(408, 388);
             this.wordLabel.Name = "wordLabel";
-            this.wordLabel.Size = new System.Drawing.Size(154, 42);
+            this.wordLabel.Size = new System.Drawing.Size(383, 42);
             this.wordLabel.TabIndex = 3;
             this.wordLabel.Text = "СЛОВО";
+            this.wordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // scoreInfo
+            // 
+            this.scoreInfo.AutoSize = true;
+            this.scoreInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.scoreInfo.Location = new System.Drawing.Point(12, 17);
+            this.scoreInfo.Name = "scoreInfo";
+            this.scoreInfo.Size = new System.Drawing.Size(216, 25);
+            this.scoreInfo.TabIndex = 3;
+            this.scoreInfo.Text = "Количество очков: 0";
+            // 
+            // restart
+            // 
+            this.restart.Location = new System.Drawing.Point(522, 13);
+            this.restart.Name = "restart";
+            this.restart.Size = new System.Drawing.Size(125, 40);
+            this.restart.TabIndex = 4;
+            this.restart.Text = "Начать заново";
+            this.restart.UseVisualStyleBackColor = true;
+            this.restart.Click += new System.EventHandler(this.restart_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 495);
+            this.Controls.Add(this.restart);
+            this.Controls.Add(this.scoreInfo);
             this.Controls.Add(this.wordLabel);
             this.Controls.Add(this.close);
             this.Controls.Add(this.char33);
@@ -471,6 +496,7 @@ namespace Gallows
             this.Controls.Add(this.gallowProgress);
             this.Name = "MainForm";
             this.Text = "Игра \"Виселица\"";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gallowProgress)).EndInit();
             this.ResumeLayout(false);
@@ -516,6 +542,8 @@ namespace Gallows
         private System.Windows.Forms.Button char33;
         private System.Windows.Forms.Button close;
         private System.Windows.Forms.Label wordLabel;
+        private System.Windows.Forms.Label scoreInfo;
+        private System.Windows.Forms.Button restart;
     }
 }
 

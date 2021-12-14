@@ -15,6 +15,8 @@ namespace Gallows
         int level;
         string word = "";
         byte step = 0;
+        int score = 0;
+
         List<string> words = new List<string>();
         public MainForm(int levelGame)
         {
@@ -82,6 +84,8 @@ namespace Gallows
                 return false;
             else
             {
+                score += (level + 1) * word.Length;
+                scoreInfo.Text = "Количество очков: " + score;
                 NewWord();
                 return true;
             }
@@ -117,10 +121,64 @@ namespace Gallows
                 gallowProgress.ImageLocation = "img/Gallows-step " + ++step + ".jpg";
                 if(step == 7)
                 {
-                    MessageBox.Show("Поражение");
+                    NewLeaderFormShow();
                 }
             }
 
+        }
+
+        private void NewLeaderFormShow()
+        {
+            string filename = "./leaders.xml";
+
+            XmlReader xmlReader = XmlReader.Create(filename);
+
+            int minScore = 0;
+            
+            while (xmlReader.Read())
+            {
+                if ((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "leader"))
+                {
+                    minScore = Convert.ToInt32(xmlReader.GetAttribute("rating"));
+                }
+            }
+            xmlReader.Close();
+
+            if (score > minScore)
+            {
+                NewLeader form = new NewLeader(score);
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Вы проиграли");
+                foreach (Button btn in this.Controls.OfType<Button>())
+                    btn.Enabled = false;
+                restart.Enabled = true;
+                close.Enabled = true;
+
+            }
+        }
+
+        private void restart_Click(object sender, EventArgs e)
+        {
+            gallowProgress.ImageLocation = "img/Gallows-step 0.jpg";
+            step = 0;
+            foreach (Button btn in this.Controls.OfType<Button>())
+                btn.Enabled = true;
+            score = 0;
+            scoreInfo.Text = "Количество очков: 0";
+            NewWord();
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();            
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            NewLeaderFormShow();
         }
     }
 }

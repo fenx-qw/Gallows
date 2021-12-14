@@ -11,9 +11,17 @@ namespace Gallows
 {
     public partial class NewLeader : Form
     {
-        public NewLeader()
+        int score;
+        public NewLeader(int sc)
         {
             InitializeComponent();
+            score = sc;
+            scoreInfo.Text = "Количество набраных очков - " + score;
+        }
+
+        private void addLeader_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

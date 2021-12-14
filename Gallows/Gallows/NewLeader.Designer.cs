@@ -32,7 +32,7 @@ namespace Gallows
             this.leaderName = new System.Windows.Forms.TextBox();
             this.addLeader = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.scoreInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // leaderName
@@ -51,6 +51,7 @@ namespace Gallows
             this.addLeader.TabIndex = 1;
             this.addLeader.Text = "ОК";
             this.addLeader.UseVisualStyleBackColor = true;
+            this.addLeader.Click += new System.EventHandler(this.addLeader_Click);
             // 
             // label1
             // 
@@ -62,22 +63,22 @@ namespace Gallows
             this.label1.TabIndex = 2;
             this.label1.Text = "Введите ваше имя";
             // 
-            // label2
+            // scoreInfo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label2.Location = new System.Drawing.Point(26, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Количество очков - ";
+            this.scoreInfo.AutoSize = true;
+            this.scoreInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.scoreInfo.Location = new System.Drawing.Point(26, 31);
+            this.scoreInfo.Name = "scoreInfo";
+            this.scoreInfo.Size = new System.Drawing.Size(222, 18);
+            this.scoreInfo.TabIndex = 3;
+            this.scoreInfo.Text = "Количество набраных очков - ";
             // 
             // NewLeader
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 146);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.scoreInfo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.addLeader);
             this.Controls.Add(this.leaderName);
@@ -93,6 +94,6 @@ namespace Gallows
         private System.Windows.Forms.TextBox leaderName;
         private System.Windows.Forms.Button addLeader;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label scoreInfo;
     }
 }
