@@ -53,6 +53,7 @@ namespace Gallows
             this.close.TabIndex = 1;
             this.close.Text = "Закрыть";
             this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // Info
             // 

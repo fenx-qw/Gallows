@@ -51,7 +51,7 @@ namespace Gallows
             this.leaderboard.Location = new System.Drawing.Point(117, 209);
             this.leaderboard.Name = "leaderboard";
             this.leaderboard.Size = new System.Drawing.Size(160, 57);
-            this.leaderboard.TabIndex = 0;
+            this.leaderboard.TabIndex = 2;
             this.leaderboard.Text = "Список лидеров";
             this.leaderboard.UseVisualStyleBackColor = true;
             this.leaderboard.Click += new System.EventHandler(this.leaderboard_Click);
@@ -61,7 +61,7 @@ namespace Gallows
             this.exit.Location = new System.Drawing.Point(117, 379);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(160, 57);
-            this.exit.TabIndex = 0;
+            this.exit.TabIndex = 4;
             this.exit.Text = "Выход";
             this.exit.UseVisualStyleBackColor = true;
             this.exit.Click += new System.EventHandler(this.exit_Click);
@@ -71,7 +71,7 @@ namespace Gallows
             this.reference.Location = new System.Drawing.Point(117, 294);
             this.reference.Name = "reference";
             this.reference.Size = new System.Drawing.Size(160, 57);
-            this.reference.TabIndex = 0;
+            this.reference.TabIndex = 3;
             this.reference.Text = "Справка";
             this.reference.UseVisualStyleBackColor = true;
             this.reference.Click += new System.EventHandler(this.reference_Click);
@@ -81,7 +81,7 @@ namespace Gallows
             this.addWord.Location = new System.Drawing.Point(117, 124);
             this.addWord.Name = "addWord";
             this.addWord.Size = new System.Drawing.Size(160, 57);
-            this.addWord.TabIndex = 0;
+            this.addWord.TabIndex = 1;
             this.addWord.Text = "Добавить слова";
             this.addWord.UseVisualStyleBackColor = true;
             this.addWord.Click += new System.EventHandler(this.addWord_Click);

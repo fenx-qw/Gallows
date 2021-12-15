@@ -33,5 +33,10 @@ namespace Gallows
             MainForm form = new MainForm(2);
             form.ShowDialog();
         }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

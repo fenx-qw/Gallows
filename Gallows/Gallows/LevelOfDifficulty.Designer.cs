@@ -73,6 +73,7 @@ namespace Gallows
             this.close.TabIndex = 2;
             this.close.Text = "Закрыть";
             this.close.UseVisualStyleBackColor = true;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // LevelOfDifficulty
             // 
@@ -84,7 +85,7 @@ namespace Gallows
             this.Controls.Add(this.normalLevel);
             this.Controls.Add(this.easyLevel);
             this.Name = "LevelOfDifficulty";
-            this.Text = "Уровень ложности";
+            this.Text = "Уровень сложности";
             this.ResumeLayout(false);
 
         }

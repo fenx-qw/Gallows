@@ -15,7 +15,7 @@ namespace Gallows
         int level;
         string word = "";
         byte step = 0;
-        int score = 15;
+        int score = 0;
 
         List<string> words = new List<string>();
         public MainForm(int levelGame)
@@ -121,6 +121,7 @@ namespace Gallows
                 gallowProgress.ImageLocation = "img/Gallows-step " + ++step + ".jpg";
                 if(step == 7)
                 {
+                    MessageBox.Show("Вы проиграли, загаданное слово - " + word);
                     NewLeaderFormShow();
                     
                 }
@@ -153,7 +154,6 @@ namespace Gallows
             }
             else
             {
-                MessageBox.Show("Вы проиграли");
                 foreach (Button btn in this.Controls.OfType<Button>())
                     btn.Enabled = false;
                 restart.Enabled = true;

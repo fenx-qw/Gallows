@@ -1,17 +1,10 @@
-<Leaders>
-  <leader name="qwe" rating="15" />
-  <leader name="qwe" rating="15" />
-  <leader name="asd" rating="15" />
-  <leader name="1" rating="10" />
-  <leader name="1" rating="10" />
-  <leader name="2" rating="10" />
-  <leader name="3" rating="10" />
-  <leader name="4" rating="10" />
-  <leader name="5" rating="10" />
-  <leader name="6" rating="10" />
-  <leader name="7" rating="10" />
-  <leader name="qwe" rating="5" />
-  <leader name="8" rating="3" />
-  <leader name="qwe" rating="4" />
-  <leader name="8" rating="2" />
+﻿<Leaders>
+  <leader name="Игрок1" rating="10" />
+  <leader name="Игрок2" rating="9" />
+  <leader name="Игрок3" rating="9" />
+  <leader name="Игрок4" rating="7" />
+  <leader name="Игрок5" rating="7" />
+  <leader name="Игрок6" rating="6" />
+  <leader name="Игрок7" rating="5" />
+  <leader name="Игрок8" rating="3" />
 </Leaders>
