@@ -1,10 +1,17 @@
-﻿<Leaders>
-  <leader name="1" rating="10"/>
-  <leader name="2" rating="10"/>
-  <leader name="3" rating="10"/>
-  <leader name="4" rating="10"/>
-  <leader name="5" rating="10"/>
-  <leader name="6" rating="10"/>
-  <leader name="7" rating="10"/>
-  <leader name="8" rating="-1"/>
+<Leaders>
+  <leader name="qwe" rating="15" />
+  <leader name="qwe" rating="15" />
+  <leader name="asd" rating="15" />
+  <leader name="1" rating="10" />
+  <leader name="1" rating="10" />
+  <leader name="2" rating="10" />
+  <leader name="3" rating="10" />
+  <leader name="4" rating="10" />
+  <leader name="5" rating="10" />
+  <leader name="6" rating="10" />
+  <leader name="7" rating="10" />
+  <leader name="qwe" rating="5" />
+  <leader name="8" rating="3" />
+  <leader name="qwe" rating="4" />
+  <leader name="8" rating="2" />
 </Leaders>

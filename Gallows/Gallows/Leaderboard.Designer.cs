@@ -30,9 +30,9 @@ namespace Gallows
         private void InitializeComponent()
         {
             this.leaderboardDataGrid = new System.Windows.Forms.DataGridView();
-            this.close = new System.Windows.Forms.Button();
             this.NameLeader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rating = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.close = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.leaderboardDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +51,20 @@ namespace Gallows
             this.leaderboardDataGrid.Size = new System.Drawing.Size(426, 283);
             this.leaderboardDataGrid.TabIndex = 0;
             // 
+            // NameLeader
+            // 
+            this.NameLeader.FillWeight = 70F;
+            this.NameLeader.HeaderText = "Имя";
+            this.NameLeader.Name = "NameLeader";
+            this.NameLeader.ReadOnly = true;
+            // 
+            // Rating
+            // 
+            this.Rating.FillWeight = 30F;
+            this.Rating.HeaderText = "Количество очков";
+            this.Rating.Name = "Rating";
+            this.Rating.ReadOnly = true;
+            // 
             // close
             // 
             this.close.Location = new System.Drawing.Point(350, 12);
@@ -59,18 +73,7 @@ namespace Gallows
             this.close.TabIndex = 2;
             this.close.Text = "Закрыть";
             this.close.UseVisualStyleBackColor = true;
-            // 
-            // NameLeader
-            // 
-            this.NameLeader.FillWeight = 70F;
-            this.NameLeader.HeaderText = "Имя";
-            this.NameLeader.Name = "NameLeader";
-            // 
-            // Rating
-            // 
-            this.Rating.FillWeight = 30F;
-            this.Rating.HeaderText = "Количество очков";
-            this.Rating.Name = "Rating";
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // Leaderboard
             // 
@@ -81,6 +84,7 @@ namespace Gallows
             this.Controls.Add(this.leaderboardDataGrid);
             this.Name = "Leaderboard";
             this.Text = "Таблица лидеров";
+            this.Load += new System.EventHandler(this.Leaderboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.leaderboardDataGrid)).EndInit();
             this.ResumeLayout(false);
 

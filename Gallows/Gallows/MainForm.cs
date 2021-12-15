@@ -15,7 +15,7 @@ namespace Gallows
         int level;
         string word = "";
         byte step = 0;
-        int score = 0;
+        int score = 15;
 
         List<string> words = new List<string>();
         public MainForm(int levelGame)
@@ -122,6 +122,7 @@ namespace Gallows
                 if(step == 7)
                 {
                     NewLeaderFormShow();
+                    
                 }
             }
 
@@ -148,6 +149,7 @@ namespace Gallows
             {
                 NewLeader form = new NewLeader(score);
                 form.ShowDialog();
+                score = 0;
             }
             else
             {
